@@ -8,7 +8,7 @@ Don't judge me too hard for my bad code, I promise I won't do it again!
 # disclaimer
 
 Many features are quite buggy, and will stay buggy for eternity.
-This is the latest version I could find in my mail archive, though I know for sure that I had fixed this bug in a later release, which I might upload as well, if I manage to find it!
+This is the latest version I could find in my mail archive, though I know for sure that I had fixed many bugs in a later release, which I might upload as well, if I manage to find it!
 
 # features 
 schreiben (<text>) -> schreibt den in eckigen Klammern angegebenen Text.

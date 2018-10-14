@@ -11,60 +11,60 @@ Many features are quite buggy, and will stay buggy for eternity.
 This is the latest version I could find in my mail archive, though I know for sure that I had fixed many bugs in a later release, which I might upload as well, if I manage to find it!
 
 # features 
-schreiben (<text>) -> schreibt den in eckigen Klammern angegebenen Text.
+schreiben (<text>) -> Outputs the text delimited by "<" and ">"
 
-schreiben (zeit) -> schreibt die Systemzeit aus.
+schreiben (zeit) -> Outputs the current time.
 
-schreiben (gross.ja/klein.ja/gross.nein/klein.nein) -> entscheidet, ob der Text ab dieser Zeile gross oder klein geschrieben werden soll.
+schreiben (gross.ja/klein.ja/gross.nein/klein.nein) -> Changes the text decoration to either Uppercase or Lowercase.
 
-schreiben (variable{variablenname}) -> schreibt den Wert einer Variable aus
+schreiben (variable{variablenname}) -> Outputs the value of a variable
 
-schreiben (zufall.zahl$maxwert) -> schreibt eine zufällige Zahl aus, die höchstens den Wert von Maxwert hat.
+schreiben (zufall.zahl$maxwert) -> Outputs a random number that is guaranteed to be smaller than "maxwert"
 
-neueVariable (wert, Name:text/zahl) -> erstellt eine neue Variable, die die angegebenen Parameter besitzt
+neueVariable (wert, Name:text/zahl) -> Creates a new variable with the given value and datatype
 
-variable1=(var2+/-/*/\var3) -> berechnet den Wert von 2 Variablen.
+variable1=(var2+/-/*/\var3) -> Performs an operation on two variables and stores it in the third one
 
-piep -> piepst
+piep -> Beeps (might only work on some machines)
 
-nachricht(<text>) -> gibt eine Nachrichtenbox aus
+nachricht(<text>) -> Outputs a message as dialog prompt
 
-schreiben (neuezeile.ja/.nein) -> entscheidet, ob für jede Ausgabe eine neue Zeile genommen wird
+schreiben (neuezeile.ja/.nein) -> Switches between adding a line after every output and not doing so.
 
-schreiben (eingabe) -> gibt eine Benutzerdefiniert Eingabe aus
+schreiben (eingabe) -> Outputs a user-entered value
 
-nachricht (eingabe) -> Gibt als Nachricht eine benutzerdefinierte Eingabe aus.
+nachricht (eingabe) -> Outputs a user-entered value as dialog prompt.
 
-punktSetzen (namedesHaltepunkts) -> markiert eine bestimmte Stelle im Code, in der gehezu() weitermachen soll  Einsprungspunkt
+punktSetzen (namedesHaltepunkts) -> creates a goto-label
 
-gehezu(namedesHaltepunkts) -> springt in der Ausführung zu dem Punkt, der durch Punktsetzen () gesetzt wurde  Einsprungspunkt
+gehezu(namedesHaltepunkts) -> Jumps to a goto-label
 
-konsole(leeren) -> leert den Inhalt der Konsole.
+konsole(leeren) -> Empties the console
 
-fertig -> geht zur letzten Stelle, wo gehezu() aufgerufen wurde.
+fertig -> Jumps to the last position where gehezu was called.
 
-synonym|Bedeutung -->erstellt ein Synonym, dass immer den Befehl ersetzen kann.
+synonym|Bedeutung -> Creates a macro-like synonyme.
 
-Konsole(farbe)->Ändert die Farbe der Konsole; bis jetzt wird grün, gelb rot blau und normal unterstützt
+Konsole(farbe)->Changes the color of the console to either "grün", "gelb", "rot", "blau" or "normal"
 
-stoppen->bricht die Ausführung komplett ab.
+stoppen -> Stops the execution 
 
-variable1==variable2->vergleicht die Variablen. Sind die Variablen ungleich, wird die nächste Zeile übersprungen.
+variable1==variable2-> Skips the next line of code if both variables are equal
 
-variable1!=variable2->vergleicht die Variablen. Sind die Variablen gleich, wird die nächste Zeile übersprungen.
+variable1!=variable2->Skips the next line of code if both variables aren't equal 
 
-variable =?->schreibt den Wert der Variable in die Konsole.
+variable =?->Outputs the value of the variable
 
-variable =++  -> erhöht den wert Der Variable um eins.
+variable =++  -> increments the variable by one
 
-variable =--  -> erniedrigt die Variable um eins.
+variable =--  -> decrements the variable by one.
 
-variable = eingabe  -> die Variable bekommt den Wert, den der Nutzer ihr zuweist.
+variable = eingabe  -> Lets the user input a variable.
 
-variable = zufall$maximaler_wert ->die Variable bekommt einen zufälligen Wert, der maximal den Wert von maximaler_wert hat.
+variable = zufall$maximaler_wert -> Assign a random value to the variable, the value will be smaller than "maximaler_wert"
 
-variable = lzeile -> die Variable kriegt den Wert der zuletzt ausgegebenen Zeile.
+variable = lzeile -> The variable becomes the last line that was outputted
 
-variable = variable/wert -> gibt der Variable den Wert der Variable, oder den Konstanten, angegebenen Wert.
+variable = variable/wert -> Assigns another variable's value or a constant value to the first variable
 
 

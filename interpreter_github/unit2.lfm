@@ -1,0 +1,46 @@
+object Form2: TForm2
+  Left = 501
+  Height = 90
+  Top = 281
+  Width = 320
+  Caption = 'Eingabe'
+  ClientHeight = 90
+  ClientWidth = 320
+  OnCloseQuery = FormCloseQuery
+  LCLVersion = '1.4.4.0'
+  object Label1: TLabel
+    Left = 80
+    Height = 13
+    Top = 8
+    Width = 87
+    Caption = 'GEBE ETWAS EIN!'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 16
+    Height = 21
+    Top = 24
+    Width = 272
+    OnEditingDone = Edit1EditingDone
+    TabOrder = 0
+    Text = 'Eingabezeile'
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 25
+    Top = 56
+    Width = 136
+    Caption = 'OK'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 160
+    Height = 26
+    Top = 55
+    Width = 116
+    Caption = 'Programmabbruch'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+end
